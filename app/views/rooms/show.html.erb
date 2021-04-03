@@ -5,8 +5,10 @@
 <%= turbo_frame_tag "room" do %>
   <%= render @room %>
 
-  <%= link_to 'Edit', edit_room_path(@room) %> |
-  <%= link_to 'Back', rooms_path, "data-turbo-frame": "_top" %>
+  <p>
+    <%= link_to 'Edit', edit_room_path(@room) %> |
+    <%= link_to 'Back', rooms_path, "data-turbo-frame": "_top" %>
+  </p>
 <% end %>
 
 <div id="messages">
